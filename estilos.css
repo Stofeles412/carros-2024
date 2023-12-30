@@ -1,0 +1,31 @@
+@charset "utf-8";
+:root{ --cor1: #363bc6;
+    --cor2:#5352d4;
+    --cor3:#7068e3;
+    --cor4:#8d7ff1;
+    --cor5: #aa95ff ;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#capa-menu{
+    background-color: #140b59;
+}
+
+
+header{
+    background-color: var(--cor3);
+    text-align: center;
+}
+header ul{
+    color: rgb(255, 255, 255);
+}
+header a{
+    color: aquamarine;
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 1.5em;
+}

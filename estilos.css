@@ -45,7 +45,12 @@ header ul a:hover{
 .ul-li{
    
     list-style-type: none;
+    margin-right: 25px;
 }
+#botao-menu{
+    width: 30px;
+}
+
 #itens{
     display: none;
 }
@@ -112,5 +117,8 @@ footer ul a:hover{
 }
 #itens{
     display: flex;
+}
+#botao-menu{
+    display: none;
 }
 }

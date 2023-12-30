@@ -14,8 +14,8 @@
     </nav>
     <header>
         <menu>
-            <button onclick="openMenu()">
-                <p><img src="imagens/menu.png" alt="incon-menu" id="botao-menu"></p>
+            <button >
+                <img src="imagens/menu.png" alt="incon-menu" id="botao-menu" onclick="openMenu()">
             </button>
             <ul id="itens">
               
@@ -90,14 +90,17 @@
         </ul>
     </footer>
     <script>
-        function openMenu(){
-  var menu = document.getElementById = ('#itens')
+  function openMenu(){
+  var menu = window.document.getElementById = ('itens')
+  var abrir = document.getElementById = ('botao-menu')
   menu.estilos.display = ('block')
 }
     </script>
 
+  
 
    
     
 </body>
+
 </html>

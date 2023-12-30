@@ -49,6 +49,7 @@ header ul a:hover{
 }
 #botao-menu{
     width: 30px;
+    cursor: pointer;
 }
 
 #itens{

@@ -11,7 +11,10 @@
     padding: 0;
 }
 #capa-menu{
-    background-color: #140b59;
+    background-image: url(imagens/fiat-argo-2024.jpg);
+    height: 200px;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 

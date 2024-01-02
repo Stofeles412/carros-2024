@@ -104,10 +104,13 @@
     <script>
         function openMenu(){
             var abrir = window.document.getElementById('itens')
+            var icone = window.document.getElementById('botao-menu')
          if(  abrir.style.display =='none'){
             abrir.style.display = 'block'
+            icone.src ='imagens/menu-fechado.png.png'
          }else{
             abrir.style.display = 'none'
+          icone.src = 'imagens/menu.png'
            
          }
         }

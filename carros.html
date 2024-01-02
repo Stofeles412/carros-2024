@@ -12,19 +12,28 @@
         
 
     </nav>
+    
+      
     <header>
-        <menu>
-            <button>
-                <img src="imagens/menu.png" alt="incon-menu" id="botao-menu" onclick="openMenu()">
-            </button>
-            <ul id="itens">
 
-                <li class="ul-li"><a href="#">motos</a></li>
-                <li class="ul-li"><a href="#">proxima-pagina</a></li>
-                <li class="ul-li"><a href="#">sobre</a></li>
-              
-           
-            </ul>
+        <button>
+            <img src="imagens/menu.png" alt="menu" id="botao-menu" onclick="openMenu()">
+           </button>
+
+     
+
+        
+        <menu>
+         
+          
+                <ul id="itens">
+
+                    <li class="ul-li"><a href="#">motos</a></li>
+                    <li class="ul-li"><a href="#">proxima-pagina</a></li>
+                    <li class="ul-li"><a href="#">sobre</a></li>
+                
+                </ul>
+          
         </menu>
     </header>
     <main>
@@ -92,23 +101,23 @@
         </ul>
     </footer>
 
-   
-
     <script>
         function openMenu(){
-            var menu = window.document.getElementById = ('itens')
-            if (menu.style.display == 'none'){
-                menu.style.display = 'block'
-            }else{
-                menu.style.display = 'block'
-            }
-
+            var abrir = window.document.getElementById('itens')
+         if(  abrir.style.display =='none'){
+            abrir.style.display = 'block'
+         }else{
+            abrir.style.display = 'none'
+           
+         }
         }
     </script>
+
    
 
 
     
 </body>
+
 
 </html>

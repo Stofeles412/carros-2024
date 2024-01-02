@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <style>
+        #itens{
+            display: none ;
+            text-align: center;
+            font-size: 1.5em;
+            background-color: rgb(252, 242, 229);
+            border-radius: 50px;
+            border: solid 1px black;
+        }
+         li{  list-style-type: none;
+            
+        }
+        a{
+            text-decoration: none;
+            font-weight: bold;
+            color: brown;
+        }
+        .ul-li{
+            margin-right: 20px;
+        }
+        a:hover{
+            background-color: rgb(233, 223, 175);
+        }
+        mark{
+            color: rgb(0, 0, 0);
+            background-color: rgb(115, 206, 183);
+           padding: 2px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+</head>
+<body>
+    <header>
+        <button>
+            <img src="imagens/menu.png" alt="menu" onclick="openMenu()" width="30px">
+        </button>
+        <menu>
+           <ul id="itens">
+            <li class="ul-li"><a href="#">oii</a></li>
+            <li  class="ul-li"><a href="#"> certo</a></li>
+            <li  class="ul-li"><a href="#"> não</a></li>
+            <li  class="ul-li"><a href="#"> conseguir</a></li>
+           </ul>
+          
+        </menu>
+        <main>
+            <h1>olá</h1>
+            <p>Aqui estou apenas relembrando, os <mark>mark</mark>, q serve para destacar certas<mark> palavras</mark> nos textos</p>
+        </main>
+    </header>
+    <script>
+        function openMenu(){
+var abrir = window.document.getElementById('itens')
+if( abrir.style.display == 'none'){
+    abrir.style.display = 'block'
+}else{
+    abrir.style.display = 'none'
+}
+        }
+    </script>
+    
+</body>
+</html>

@@ -40,12 +40,13 @@ header a{
     font-size: 1.5em;
 }
 header ul a:hover{
-    background-color: aliceblue;
+    background-color: rgb(115, 100, 168);
 }
 .ul-li{
    
     list-style-type: none;
     margin-right: 25px;
+    margin-top: 25px;
 }
 #botao-menu{
     width: 30px;
@@ -54,6 +55,7 @@ header ul a:hover{
 
 #itens{
     display: none;
+  
 }
 
 
@@ -118,8 +120,12 @@ footer ul a:hover{
 }
 #itens{
     display: flex;
+    margin-left: 20px;
 }
 #botao-menu{
     display: none;
+}
+.ul-li{
+   margin-bottom: 40px;
 }
 }

@@ -79,6 +79,7 @@ main h2{
 main p{
     margin-top: 40px;
     text-indent: 10px;
+    font-size: 1.3em;
 }
 
 
@@ -110,7 +111,7 @@ footer a{
 }
 .a-carros{
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1em;
     text-decoration: none;
     text-transform: uppercase;
     background-color: #aa95ff;

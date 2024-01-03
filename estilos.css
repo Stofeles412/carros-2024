@@ -95,7 +95,9 @@ main p{
     border: solid 1px rgba(0, 0, 0, 0.52);
 }
 
-.imagens:hover{ box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.544);
+.imagens:hover{ box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.544)
+    ;
+    cursor: pointer;
     
  
 }

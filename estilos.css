@@ -25,22 +25,24 @@
 
 
 header{
-    background-color: var(--cor5);
+    background-color: var(--cor2);
     text-align: center;
     box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.217);
+   
 }
 header ul{
     color: rgb(0, 0, 0);
 }
 header a{
-    color:#000000;
+    color:#fffdfd;
     text-decoration: none;
     list-style-type: none;
     font-weight: bold;
     font-size: 1.5em;
 }
 header ul a:hover{
-    background-color: rgb(115, 100, 168);
+    background-color: rgb(7, 196, 244);
+    color:  black;
 }
 .ul-li{
    
@@ -51,11 +53,17 @@ header ul a:hover{
 #botao-menu{
     width: 30px;
     cursor: pointer;
+    background-color: transparent;
 }
 #botao-menu:hover{
     background-color: #5352d4;
     border-radius: 1%;
     border: none;
+}
+button{
+    border: 0;
+    background-color: transparent;
+  
 }
 
 #itens{
@@ -67,11 +75,12 @@ header ul a:hover{
 main{
    padding: 30px;
    border: solid 1px black;
+   text-transform: initial;
 }
 main h1{
     padding: 30px;
     margin-top: 100px;
-    text-transform: capitalize;
+  
 }
 
 
@@ -85,6 +94,7 @@ main p{
     margin-top: 40px;
     text-indent: 10px;
     font-size: 1.3em;
+    line-height: 40px;
 }
 
 

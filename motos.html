@@ -41,7 +41,7 @@
 
         <h2>titan 160</h2>
         
-        <img src="imagens/titan-2023.jpg" alt="titan" class="imagens">
+        <img src="imagens/titan-2023.jpg" alt="titan" class="imagens" onclick="ampliarImg()">
 
         <p>começamos nossa lista, com uma das mais vendidas do brasil, a titan 160, uma moto muito boa, para trabalho, e o seu dia a dia.</p>
 
@@ -54,7 +54,7 @@
 
         <h2>bross 160</h2>
 
-        <img src="imagens/bross-2023.jpeg" alt="bross" class="imagens">
+        <img src="imagens/bross-2023.jpeg" alt="bross" class="imagens" onclick="zoom()">
         <p>aqui temos mais uma exelente moto da honda, lembrando, que com ela, é muito funcional na cidade, para sair e trabalho, e também para estradas mais de terras.</p>
 
 
@@ -115,6 +115,28 @@
           icone.src = 'imagens/menu.png'
            
          }
+        }
+        abrir = false
+        function ampliarImg(){
+            var almentar = window.document.getElementsByClassName('imagens')
+            if(!abrir){
+                almentar[0].style.width = "500px"
+                abrir = true
+            }else{
+                almentar[0].style.width = "1200px"
+                abrir = false
+            }
+        }
+        var ope = false
+        function zoom(){
+            var almente = window.document.getElementsByClassName('imagens')
+            if(!ope){
+            almente[1].style.width = "600px"
+            ope = true
+            }else{
+            almente[1].style.width = "1300px"
+            ope = false
+            }
         }
     </script>
 

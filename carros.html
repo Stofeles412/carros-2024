@@ -85,7 +85,7 @@
 
         <h2>pegout 208</h2>
 
-        <img src="imagens/peugeot-208-1.0-style-2023.jpg" alt="208" class="imagens">
+        <img src="imagens/peugeot-208-1.0-style-2023.jpg" alt="208" class="imagens" onclick="openimg()">
 
         <p>um carro com visual bem sofisticado, que eu gostei bastante, o <a href="https://carros.peugeot.com.br/gama/peugeot-208.html" target="_blank" class="a-carros">pegout 208</a>é um uma otima opção de compra para 2024.</p>
 
@@ -98,7 +98,7 @@
 
         <h2>fiat argo</h2>
 
-        <img src="imagens/fiat-argo-2024.jpg" alt="argo" class="imagens">
+        <img src="imagens/fiat-argo-2024.jpg" alt="argo" class="imagens" onclick="zoomImg()">
 
         <p>e por ultimo, mas não menos inportante, o fiat <a href="https://argo.fiat.com.br/" target="_blank" class="a-carros">argo</a>é mais uma otima opção de carro novo, para se comprar no brasil, também com um visual bem sofisticado, é muito econômico também.</p>
     </main>
@@ -159,11 +159,37 @@ function abririmg(){
       zoo[2].style.width = "500px" 
       ope = false; 
     }
+} var op = false
+ function openimg(){
+    var abri = window.document.getElementsByClassName('imagens')
+    if(!op){
+        abri[3].style.width = "500px"
+        op = true
+    }else{
+        abri[3].style.width = "1200px"
+        op = false
+    }
+ }
+var almen = false
+function zoomImg(){
+    var allmente = window.document.getElementsByClassName('imagens')
+    if(!almen){
+        allmente[4].style.width = "500px";
+        almen = true
+    }else{
+        allmente[4].style.width = "1200px"
+        almen = false
+    }
 }
-
-
-
-
+//forma simplificada do codigo a cima
+/*function ampliarImg(index) {
+    var imagens = document.getElementsByClassName('imagens');
+    var novaLargura = imagens[index].style.width === "500px" ? "1000px" : "500px";
+    for (var i = 0; i < imagens.length; i++) {
+        imagens[i].style.width = "500px";
+    }
+    imagens[index].style.width = novaLargura;
+}*/
 
 
 

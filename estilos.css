@@ -107,7 +107,7 @@ main p{
 
 .imagens:hover{ box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.544)
     ;
-    cursor: pointer;
+    cursor: zoom-in;
     
  
 }

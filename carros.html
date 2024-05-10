@@ -41,7 +41,7 @@
 
         <h2>renaut sandeiro</h2>
         
-        <img src="imagens/sandeiro-2023.jpg" alt="sandeiro" class="imagens">
+        <img src="imagens/sandeiro-2023.jpg" alt="sandeiro" class="imagens" onclick="ampliarImg()">
 
         <p>começamos nossa lista, com um exelente carro custo beneficio. o <a href="https://www.renault.com.br/veiculos-de-passeio.html" target="_blank" class="a-carros">sandeiro</a> é sem duvidas um exelente carro para se ter em 2024.</p>
 
@@ -54,7 +54,7 @@
 
         <h2>hyundai hb20</h2>
 
-        <img src="imagens/hb 20.jpeg" alt="hb20" class="imagens">
+        <img src="imagens/hb 20.jpeg" alt="hb20" class="imagens" onclick="abrir()">
        
       
 
@@ -72,7 +72,7 @@
 
         <h2>woksvagen polo</h2>
 
-        <img src="imagens/VW-Polo-2024.webp" alt="polo" class="imagens" >
+        <img src="imagens/VW-Polo-2024.webp" alt="polo" class="imagens" onclick="abririmg()" >
 
         <p>o sucessor do antigo gol, que ja chegou com o mesmo valor do seu antecessor, e com certeza tem um bom custo beneficio.</p>
 
@@ -125,6 +125,50 @@
            
          }
         }
+        var zoom = false;
+        
+function ampliarImg() {
+    var imagens = window.document.getElementsByClassName('imagens');
+    if (!zoom) {
+        imagens[0].style.width = "1000px";
+        zoom = true;
+    } else {
+        imagens[0].style.width = "500px";
+        zoom = false;
+    }
+}
+var almente = false
+function abrir(){
+    var abrir = window.document.getElementsByClassName('imagens')
+    if(!almente){
+    abrir[1].style.width = "1000px"
+    almente = true;
+    }else{
+      abrir[1].style.width = "500px" 
+      almente = false; 
+    }
+}
+
+var ope= false
+function abririmg(){
+    var zoo = window.document.getElementsByClassName('imagens')
+    if(!ope){
+    zoo[2].style.width = "1200px"
+    ope = true;
+    }else{
+      zoo[2].style.width = "500px" 
+      ope = false; 
+    }
+}
+
+
+
+
+
+
+
+
+      
     </script>
 
    

@@ -65,7 +65,7 @@
 
         <h2>yamanha factor 2023</h2>
 
-        <img src="imagens/factor 2023.jpeg" alt="factor" class="imagens" >
+        <img src="imagens/factor 2023.jpeg" alt="factor" class="imagens" onclick="zoo()" >
 
         <p>a factor 2023, outra exelente moto custo beneficio, para o seu dia, trabalho e etc...</p>
 
@@ -120,10 +120,10 @@
         function ampliarImg(){
             var almentar = window.document.getElementsByClassName('imagens')
             if(!abrir){
-                almentar[0].style.width = "500px"
+                almentar[0].style.width = "400px"
                 abrir = true
             }else{
-                almentar[0].style.width = "1200px"
+                almentar[0].style.width = "800px"
                 abrir = false
             }
         }
@@ -131,13 +131,25 @@
         function zoom(){
             var almente = window.document.getElementsByClassName('imagens')
             if(!ope){
-            almente[1].style.width = "600px"
+            almente[1].style.width = "500px"
             ope = true
             }else{
-            almente[1].style.width = "1300px"
+            almente[1].style.width = "700px"
             ope = false
             }
         }
+
+        var mais = false;
+        function zoo(){
+        var zom = window.document.getElementsByClassName('imagens')
+        if(!mais){
+            zom[2].style.width = "500px"
+            mais = true
+        }else{
+        zom[2].style.width = "1200px"
+        mais = false
+        }
+    }
     </script>
 
    

@@ -25,9 +25,12 @@
 
 
 header{
+    height: 200px;
     background-color: var(--cor2);
     text-align: center;
     box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.217);
+   
+    
    
 }
 header ul{
@@ -68,6 +71,7 @@ button{
 
 #itens{
     display: none;
+   
   
 }
 
@@ -105,9 +109,9 @@ main p{
     border: solid 1px rgba(0, 0, 0, 0.52);
 }
 
-.imagens:hover{ box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.544)
-    ;
+.imagens:hover{ box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.544) ;
     cursor: zoom-in;
+    transition: 1s;
     
  
 }
@@ -151,11 +155,16 @@ footer ul a:hover{
 #itens{
     display: flex;
     margin-left: 20px;
+    
+    
 }
 #botao-menu{
     display: none;
 }
 .ul-li{
    margin-bottom: 40px;
+}
+header{
+   height: 200px;
 }
 }

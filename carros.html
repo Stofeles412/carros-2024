@@ -53,7 +53,7 @@
 
         <h2>hyundai hb20</h2>
 
-        <img src="imagens/hb 20.jpeg" alt="hb20" class="imagens" onclick="abrir()">
+        <img src="imagens/hb 20.jpeg" alt="hb20" class="imagens" onclick="ampliarImg()">
        
       
 
@@ -71,7 +71,7 @@
 
         <h2>woksvagen polo</h2>
 
-        <img src="imagens/VW-Polo-2024.webp" alt="polo" class="imagens" onclick="abririmg()" >
+        <img src="imagens/VW-Polo-2024.webp" alt="polo" class="imagens" >
 
         <p>o sucessor do antigo gol, que ja chegou com o mesmo valor do seu antecessor, e com certeza tem um bom custo beneficio.</p>
 
@@ -84,7 +84,7 @@
 
         <h2>pegout 208</h2>
 
-        <img src="imagens/peugeot-208-1.0-style-2023.jpg" alt="208" class="imagens" onclick="openimg()">
+        <img src="imagens/peugeot-208-1.0-style-2023.jpg" alt="208" class="imagens" onclick="ampliarImg()">
 
         <p>um carro com visual bem sofisticado, que eu gostei bastante, o <a href="https://carros.peugeot.com.br/gama/peugeot-208.html" target="_blank" class="a-carros">pegout 208</a>é um uma otima opção de compra para 2024.</p>
 
@@ -97,7 +97,7 @@
 
         <h2>fiat argo</h2>
 
-        <img src="imagens/fiat-argo-2024.jpg" alt="argo" class="imagens" onclick="zoomImg()">
+        <img src="imagens/fiat-argo-2024.jpg" alt="argo" class="imagens" onclick="ampliarImg()">
 
         <p>e por ultimo, mas não menos inportante, o fiat <a href="https://argo.fiat.com.br/" target="_blank" class="a-carros">argo</a>é mais uma otima opção de carro novo, para se comprar no brasil, também com um visual bem sofisticado, é muito econômico também.</p>
     </main>
@@ -125,17 +125,22 @@
          }
         }
         var zoom = false;
-        
+
 function ampliarImg() {
-    var imagens = window.document.getElementsByClassName('imagens');
-    if (!zoom) {
-        imagens[0].style.width = "1000px";
-        zoom = true;
-    } else {
-        imagens[0].style.width = "500px";
-        zoom = false;
+    var imagens = document.querySelectorAll('.imagens');
+    if (imagens.length > 0) {
+        imagens.forEach(function(imagem) {
+            if (!zoom) {
+                imagem.style.width = "1000px";
+            } else {
+                imagem.style.width = "500px";
+            }
+        });
+        zoom = !zoom; // Inverte o estado do zoom
     }
 }
+
+/*
 var almente = false
 function abrir(){
     var abrir = window.document.getElementsByClassName('imagens')
@@ -180,6 +185,7 @@ function zoomImg(){
         almen = false
     }
 }
+/*
 //forma simplificada do codigo a cima
 /*function ampliarImg(index) {
     var imagens = document.getElementsByClassName('imagens');
